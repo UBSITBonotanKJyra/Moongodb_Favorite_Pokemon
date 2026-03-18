@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'favorite-pokemon' title`, () => {
+  it(`should have the 'FavPoke' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('favorite-pokemon');
+    expect(app.title).toEqual('FavPoke');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, favorite-pokemon');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, FavPoke');
   });
 });
